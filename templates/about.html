@@ -1,0 +1,18 @@
+{% extends 'Layout.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+  <h1>{{ title }}</h1>
+  <hr>
+  <h2>My name is {{ name }}</h2>
+  <h2>Email address is {{ email }}</h2>
+  <h2>Mobile phone number is {{ mobile }}</h2>
+  {% if age %}
+    <h2>Age is {{ age }}</h2>
+  {% else %}
+    <h2>Younger</h2>
+  {% endif %}
+{% endblock %}
